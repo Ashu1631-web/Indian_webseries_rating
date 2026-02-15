@@ -61,5 +61,11 @@ max_rating = ratings.max()
 min_rating = ratings.min()
 
 col1, col2, col3 = st.columns(3)
+
 col1.metric("⭐ Average Rating", round(avg_rating, 2))
-col2.metric("🔥 Highest Rating", round(max_rati_
+col2.metric("🔥 Highest Rating", round(max_rating, 2))
+col3.metric("⚡ Lowest Rating", round(min_rating, 2))
+
+st.info(
+    f"Insight: **{selected_series}** has an average rating of "
+    f"**{round(avg_r_**
